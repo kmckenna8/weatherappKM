@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="search-form" id="search-form">
+            <input type="search" placeholder="Enter City" id="search-text-input" autocomplete="off" />
+            <button type="button" class="button">Search</button>
+        </form>
+        <div>
+            <div class="row">
+                <div class="col">
+                    <h1 id="city">New York</h1>
+
+                    <br />
+                    <p>-current weather-</p>
+                    <p class="date" id="date">Date</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <h2 id="sun">☀️</h2>
+                </div>
+            </div>
+            <hr>
+
+            <div class="forecast">
+                <div class="row">
+                    <div class="col">Five Day Forecast</div>
+                </div>
+            </div>
+
+
+            <div class="fiveDay">
+                <div class="row">
+                    <div class="col">
+                        Mon <br /><br /> ☀️ <br /><br /> 88°
+                    </div>
+
+                    <div class="col">
+                        Tue<br /><br /> 🌤 <br /><br />79°
+                    </div>
+
+                    <div class="col">
+                        Wed <br /><br /> ⛈ <br /><br /> 74°
+                    </div>
+
+                    <div class="col">
+                        Thu <br /><br /> 🌥 <br /><br /> 77°
+                    </div>
+
+                    <div class="col">
+                        Fri <br /><br /> ☀️ <br /><br /> 99°
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <p> Coded by Karly McKenna</p>
+</body>
+<script src="src/script.js"></script>>
+
+</html>

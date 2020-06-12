@@ -1,0 +1,73 @@
+.container {
+  font-family: "DM Mono", monospace;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f3f8fe;
+  max-width: 600px;
+  padding: 8px 15px;
+  background-image: linear-gradient(to top, #f5f5f5 30%, #0183f8 60%);
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: gray;
+  border-style: solid;
+}
+
+.searchCity {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+button {
+  color: white;
+  background: #ffba5f;
+  border-radius: 10px;
+  border: none;
+  padding: 3px 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  transition: all ease-in-out;
+}
+button:hover {
+  opacity: 85%;
+  cursor: pointer;
+}
+h1 {
+  color: #00e4ff;
+  display: block;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 20px 20px auto;
+  padding: 10px;
+}
+h1:hover {
+  text-decoration: underline;
+}
+h2 {
+  color: #00e4ff;
+  font-size: 35px;
+  font-style: bold;
+}
+
+.forecast {
+  font-weight: bold;
+  color: #ffba5f;
+  font-size: 25px;
+}
+.forecast:hover {
+  text-decoration: underline;
+}
+.fiveDay {
+  color: #ffba5f;
+  background: #dafffe;
+  border-radius: 15px;
+  margin: 20px 20px;
+  padding: 30px;
+  border-color: #00e4ff;
+  border-style: solid;
+}
+
+p {
+  color: #ffba5f;
+  font-weight: bold;
+}
