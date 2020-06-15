@@ -16,7 +16,7 @@
 .searchCity {
   text-align: center;
   margin: 0 auto;
-  padding: 10px;
+  padding: 8px;
 }
 
 button {
@@ -38,7 +38,7 @@ h1 {
   font-weight: bold;
   font-size: 50px;
   margin: 20px 20px auto;
-  padding: 10px;
+  padding: 8px;
 }
 h1:hover {
   text-decoration: underline;
