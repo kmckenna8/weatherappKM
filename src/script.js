@@ -48,15 +48,15 @@ function showWeather(response) {
   let temperature = Math.round(response.data.main.temp);
   let h2 = document.querySelector("h2");
   sun.innerHTML = `${temperature}°C`;
-  document.querySelector("#description").innerHTML = Math.round(
-    response.data.weather[0].main
-  );
+
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
   );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
 }
 
 axios.get(url).then(showWeather);
