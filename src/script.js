@@ -47,7 +47,16 @@ function showWeather(response) {
   console.log(response.data.main.temp);
   let temperature = Math.round(response.data.main.temp);
   let h2 = document.querySelector("h2");
-  h2.innerHTML = `${temperature}°C`;
+  sun.innerHTML = `${temperature}°C`;
+  document.querySelector("#description").innerHTML = Math.round(
+    response.data.weather[0].main
+  );
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#humidity").innerHTML = Math.round(
+    response.data.main.humidity
+  );
 }
 
 axios.get(url).then(showWeather);
