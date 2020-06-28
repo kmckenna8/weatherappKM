@@ -47,7 +47,7 @@ function showWeather(response) {
   console.log(response.data.main.temp);
   let temperature = Math.round(response.data.main.temp);
   let h2 = document.querySelector("h2");
-  sun.innerHTML = `${temperature}°C`;
+  cel.innerHTML = `${temperature}°C`;
 
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
