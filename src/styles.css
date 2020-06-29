@@ -5,8 +5,8 @@
   text-align: center;
   background-color: #f3f8fe;
   max-width: 600px;
-  padding: 8px 15px;
-  background-image: linear-gradient(to top, #f5f5f5 30%, #0183f8 60%);
+  padding: 15px 15px;
+  background-image: linear-gradient(to top, #f5f5f5 5%, #0183f8 40%);
   border-radius: 15px;
   border-width: 5px;
   border-color: gray;
@@ -71,10 +71,19 @@ h3 {
   border-color: gray;
   border-style: solid;
   font-size: 14px;
+  font-weight: bold;
 }
 
 p {
   color: #ffba5f;
   font-weight: bold;
   font-size: 11px;
+}
+
+a {
+  color: white;
+}
+
+.osc {
+  color: #0184f8;
 }

@@ -47,7 +47,7 @@ function showWeather(response) {
   console.log(response.data.main.temp);
   let temperature = Math.round(response.data.main.temp);
   let h2 = document.querySelector("h2");
-  cel.innerHTML = `${temperature}°C`;
+  cel.innerHTML = `${temperature}°C/`;
 
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -58,5 +58,13 @@ function showWeather(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 }
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let tempChange = document.querySelector("#fahrenheitLink");
+  let temperature = tempChange.innerHTML;
+  tempChange.innerHTML = Math.round((temperature * 9) / 5 + 32);
+}
+let fahrenheitLink = document.querySelector("#fahrenheitLink");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 axios.get(url).then(showWeather);
